@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <RelativeLayout
+        android:id="@+id/img_cart_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimaryTransparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash"
+            android:contentDescription="@string/card_image" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/space_very_small"
+            android:background="@drawable/shape_underline_tansparant_card_bacground"
+            android:gravity="center"
+            android:text="@string/default_card_name"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/very_transparent_black"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/barcode_scanner_text"/>
+</LinearLayout>

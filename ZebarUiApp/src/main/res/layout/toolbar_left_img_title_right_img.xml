@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_left_img_title_right_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/btn_toolbar_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_very_small"
+            android:contentDescription="@string/menu_button_desc"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_menu_states" />
+
+        <TextView
+            android:id="@+id/tw_toolbar_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/btn_toolbar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_very_small"
+            android:clickable="true"
+            android:textColor="@android:color/white"
+            android:contentDescription="@string/menu_button_desc"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

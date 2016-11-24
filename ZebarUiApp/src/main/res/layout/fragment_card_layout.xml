@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height"
+    android:layout_margin="@dimen/fab_margin"
+    android:clickable="true"
+    android:background="@drawable/shape_card_background">
+
+    <ImageView
+        android:id="@+id/img_card_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_average_big"
+        android:contentDescription="@string/card_tickets_text"
+        android:scaleType="centerInside"
+        android:src="@drawable/zebar_logo_other_1_2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/space_very_small"
+        android:paddingBottom="@dimen/space_very_small"
+        android:paddingRight="@dimen/space_very_small"
+        android:paddingLeft="@dimen/space_middle"
+        android:background="@drawable/shape_underline_tansparant_card_bacground"
+        android:gravity="left"
+        android:text="@string/default_card_name"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

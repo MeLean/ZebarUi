@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="big_button_width">220dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="shapes_radius">10dp</dimen>
+    <dimen name="dot_size">18dp</dimen>
+
+    <!-- menu dimen -->
+    <dimen name="menu_width">240dp</dimen>
+    <dimen name="space_very_small">8dp</dimen>
+    <dimen name="space_small">12dp</dimen>
+    <dimen name="space_middle">16dp</dimen>
+    <dimen name="space_average_big">24dp</dimen>
+    <dimen name="menu_big_margin">32dp</dimen>
+    <dimen name="menu_image_size">76dp</dimen>
+    <dimen name="user_layout_height">36dp</dimen>
+    <dimen name="card_height">124dp</dimen>
+    <dimen name="search_layout_size">36dp</dimen>
+
+
+    <!-- text size -->
+    <dimen name="text_size_middle">22sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+    <dimen name="text_size_average_small">16sp</dimen>
+    <dimen name="text_size_very_small">12sp</dimen>
+    <dimen name="text_size_almost_tiny">10sp</dimen>
+    <dimen name="text_size_tiny">8sp</dimen>
+
+</resources>

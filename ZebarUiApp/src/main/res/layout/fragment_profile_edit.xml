@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/holder1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/addpic_btn" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:weightSum="3" >
+
+                    <ImageButton
+                        android:id="@+id/btn_tutorial"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_tutorial_states" />
+
+                    <ImageButton
+                        android:id="@+id/btn_notification"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_notification_states" />
+
+                    <ImageButton
+                        android:id="@+id/btn_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/edit_btn_prs" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/holder3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/txt_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="Name"
+                            android:inputType="textCapWords"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="35dp"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_first_name"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/txt_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="Surname"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:paddingRight="35dp"
+                            android:singleLine="true"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_last_name"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/container_old_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/et_old_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="Current Password"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="40dp"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/container_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/et_new_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="New Password (at least 6 symbols)"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="40dp"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                    <ToggleButton
+                        android:id="@+id/btn_new_pass"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textOff="SHOW"
+                        android:textOn="HIDE"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/container_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="40dp"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+                </RelativeLayout>
+
+                ,<homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="City"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <Spinner
+                        android:id="@+id/sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_rect_rounded_et" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="Address (optional)"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:paddingRight="35dp"
+                            android:singleLine="true"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_address"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                </RelativeLayout>
+
+                <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="Birth date"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <Button
+                        android:id="@+id/btn_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/shape_rect_rounded_et"
+                        android:gravity="center_vertical|left"
+                        android:hint="Birth date"
+                        android:textSize="18sp" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="Sex"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <TextView
+                        android:id="@+id/et_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/shape_rect_rounded_et"
+                        android:hint="Sex"
+                        android:textSize="18sp" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_rect_rounded_et"
+                            android:ellipsize="end"
+                            android:hint="Phone"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="35dp"
+                            android:textSize="18sp" />
+                    </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_phone"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                </RelativeLayout>
+
+                <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_birth_ch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="Birthdate - child 1"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <Button
+                        android:id="@+id/et_birth_ch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/shape_rect_rounded_et"
+                        android:gravity="center_vertical|left"
+                        android:hint="Birthdate - child 1 (optional)"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_birth_ch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="Birthdate - child 2 (optional)"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <Button
+                        android:id="@+id/et_birth_ch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/shape_rect_rounded_et"
+                        android:gravity="center_vertical|left"
+                        android:hint="Birthdate - child 2 (optional)"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_interests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="Interests (optional)"
+                    android:visibility="gone"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <Spinner
+                        android:id="@+id/sp_interests"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/shape_rect_rounded_et" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <homemade.com.zebarui.ui.customviews.FloatLabelLayout
+                    android:id="@+id/fll_interests_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:floatLabelHint="Interests (optional)"
+                    app:floatLabelTextAppearance="@style/TextAppearance.ZebarUi.FloatLabel" >
+
+                    <Button
+                        android:id="@+id/btn_interests"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:gravity="left|center_vertical"
+                        android:hint="Interests (optional)"
+                        android:background="@drawable/shape_rect_rounded_et" />
+                </homemade.com.zebarui.ui.customviews.FloatLabelLayout>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_blue_small_states"
+                    android:text="Save"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

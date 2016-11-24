@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_left_img_tabs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/btn_toolbar_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_very_small"
+            android:contentDescription="@string/menu_button_desc"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_menu_states" />
+
+        <LinearLayout
+            android:id="@+id/toolbar_tab_group"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:layout_width="240dp"
+            android:weightSum="12"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_left_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Left tab"
+                android:layout_weight="6"
+                android:padding="@dimen/space_very_small"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape_tab_left_prs"
+
+                />
+
+            <TextView
+                android:id="@+id/toolbar_right_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Right tab"
+                android:layout_weight="6"
+                android:padding="@dimen/space_very_small"
+                android:singleLine="true"
+                android:textColor="@color/yellow"
+                android:background="@drawable/shape_tab_right"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

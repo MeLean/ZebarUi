@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/offers_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_layout_size"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        >
+
+        <RelativeLayout
+            android:id="@+id/offers_search_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:layout_marginRight="5dp"
+            android:padding="2dp"
+            android:background="@drawable/search_field"
+            >
+
+            <ImageView
+                android:id="@+id/offers_search_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/search_icon"
+                android:src="@drawable/search_icn" />
+
+            <EditText
+                android:id="@+id/offers_search_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:minHeight="20dp"
+                android:padding="0dp"
+                android:textSize="@dimen/text_size_very_small"
+                android:layout_marginLeft="@dimen/space_very_small"
+                android:hint="@string/search_for_offers"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/sp_offers_header_dropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="@dimen/text_size_almost_tiny"
+            android:prompt="@string/offers_sort_by_text"
+            android:background="@drawable/spinner_states"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/offer_item"
+        android:layout_width="98dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/space_small"
+        android:contentDescription="@string/offer_desc"
+        android:src="@drawable/dummy_login"/>
+</LinearLayout>

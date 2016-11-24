@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">ZebarUi</string>
+    <string name="action_settings">Toggle</string>
+    <string name="tw_scanner_text">Already have plastic card/ticket?</string>
+    <string name="btn_scanner_text">Scan Your Barcode</string>
+    <string name="tw_card_reader_text">Don`t have a plastic discount card? Request a virtual card.</string>
+    <string name="btn_card_reader_text">Request Card</string>
+    <string name="add_text">Add</string>
+    <string name="user_pic">user picture</string>
+    <string name="card_tickets_text">Cards and Tickets</string>
+    <string name="menu_button_desc">menu button</string>
+    <string name="default_user_name">Guest</string>
+    <string name="map_text">Map</string>
+    <string name="offers_text">Offers</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="edit_text">Edit</string>
+    <string name="refresh_text">Refresh</string>
+    <string name="default_card_name">Card Name</string>
+    <string name="barcode_scanner_text">Barcode Scanner</string>
+    <string name="camera_hole">camera_hole</string>
+    <string name="title_activity_delete_me">delete_me</string>
+    <string name="dismiss_text">Dismiss</string>
+    <string name="done">Done</string>
+    <string name="option_dot_desc">option</string>
+    <string name="default_hint">Put your hint text in me!</string>
+
+    <!-- profile fields -->
+    <string name="profile_text">Profile</string>
+    <string name="label_email">E-mail:</string>
+    <string name="label_password">Password:</string>
+    <string name="label_town">Town:</string>
+    <string name="label_address">Address:</string>
+    <string name="label_birth_date">Date of birth:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_sex">Gender:</string>
+    <string name="label_kid_1">Date of birth child 1:</string>
+    <string name="label_kid_2">Date of birth child 2:</string>
+    <string name="label_interests">Interests:</string>
+    <string name="logout_text">Logout</string>
+
+
+    <string name="search_icon">search icon</string>
+    <string name="search_for_offers">Search for offers</string>
+
+    <string name="offers_sort_by_text">Sort by</string>
+    <string name="offer_desc">offer_desc</string>
+    <string name="english_conversation_club">English Conversation Club</string>
+    <string name="some_text">Some long text which is more than one line long. Usually this is a dome dummy text that describes the offer!</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="can_not_find_anything">Can not find anything</string>
+    <string name="meal_deal">Meals &amp; Deals</string>
+    <string name="sales">Sales</string>
+    <string name="map_list_view">List view</string>
+    <string name="reserve_now">Reserve now:</string>
+    <string name="offer_url">http://bashMaistor.maistor.bg</string>
+    <string name="offer_address">Some Address</string>
+    <string name="card_text">Card</string>
+    <string name="delete_text">Delete</string>
+    <string name="skip_text">Skip</string>
+    <string name="card_image">card image</string>
+    <string name="tutorial_text">tutorial</string>
+    <string name="choose_brand">Choose brand</string>
+    <string-array name="offers_sort_values">
+        <item>Sort By</item>
+        <item>Newest</item>
+        <item>Nearest</item>
+        <item>Alphabetically</item>
+    </string-array>
+</resources>

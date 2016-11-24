@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_video_player_controls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/hint_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dots_layout"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/default_hint"/>
+
+    <ImageView
+        android:id="@+id/picked_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_middle"
+        android:contentDescription="@string/option_dot_desc"
+        android:layout_toRightOf="@+id/dots_layout"
+        android:layout_above="@+id/btn_done_video_player"
+        android:src="@drawable/tutorial_dot_actv" />
+    <LinearLayout
+        android:id="@+id/dots_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@+id/btn_done_video_player">
+        <ImageView
+            android:id="@+id/option_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_very_small"
+            android:contentDescription="@string/option_dot_desc"
+            android:src="@drawable/tutorial_dot" />
+        <ImageView
+            android:id="@+id/option_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_very_small"
+            android:contentDescription="@string/option_dot_desc"
+            android:src="@drawable/tutorial_dot" />
+        <ImageView
+            android:id="@+id/option_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_very_small"
+            android:contentDescription="@string/option_dot_desc"
+            android:src="@drawable/tutorial_dot" />
+        <ImageView
+            android:id="@+id/option_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_very_small"
+            android:contentDescription="@string/option_dot_desc"
+            android:src="@drawable/tutorial_dot" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_done_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/space_middle"
+        android:textColor="@android:color/white"
+        android:background="@color/very_transparent_black"
+        android:text="@string/done"/>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rl_picture_header"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/img_offer_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_small"
+            android:contentDescription="@string/card_tickets_text"
+            android:scaleType="center"
+            android:src="@drawable/dummy_login"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="3dp"
+            android:paddingTop="@dimen/space_very_small"
+            android:background="@color/colorPrimaryTransparent"
+            android:gravity="center"
+            android:text="@string/english_conversation_club"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sw_offer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_picture_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tw_offer_item_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/tw_offer_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tw_offer_item_date"
+                android:text="@string/some_text"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tw_offer_item_reserve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tw_offer_item_text"
+                android:text="@string/reserve_now"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tw_offer_item_ulr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tw_offer_item_reserve"
+                android:text="@string/offer_url"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tw_offer_item_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tw_offer_item_ulr"
+                android:text="@string/offer_address"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
